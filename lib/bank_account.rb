@@ -1,3 +1,4 @@
+require 'pry'
 class BankAccount
   attr_accessor :balance, :status
   attr_reader :name
@@ -10,7 +11,8 @@ class BankAccount
   end
 
   def deposit(amount)
-    self.balance += amount
+    binding.pry
+    balance += amount
   end
 
 end
